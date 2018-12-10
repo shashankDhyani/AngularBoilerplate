@@ -5,3 +5,15 @@ button{
 input {
     margin-top: 8px;
 }
+
+.fa .fa-eye{
+        position:absolute;
+        z-index:1000;
+        top:30%;
+        left:2%;
+}
+
+.fa-eye
+{
+     text-decoration: none !important;
+}

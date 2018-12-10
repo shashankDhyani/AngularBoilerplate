@@ -9,8 +9,13 @@ import { userModel } from '../../shared/Models/UserModel';
 export class LoginComponent implements OnInit {
 
   constructor() { }
+  showPassword:boolean;
 
   ngOnInit() {
+  }
+
+  togglePasswordVisibility(){
+    this.showPassword = ! this.showPassword;
   }
 
   logIn(user:userModel) {
