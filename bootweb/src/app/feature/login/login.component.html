@@ -1,15 +1,15 @@
 <div class="row">
   <div class=" card card-body col-sm-4">
   <div class="card-title">Log In</div>
-    <input type="text" class="form-control" placeholder="Enter Username or EmailId" />
+    <input type="text" class="form-control" [(ngModel)]="this.User.userName" placeholder="Enter Username or EmailId" />
     <div class="form-group">
-     <input type="{{this.showPassword ? 'text':'password'}}" class="form-control" placeholder="Enter Password" />
+     <input type="{{this.showPassword ? 'text':'password'}}" class="form-control" [(ngModel)]="this.User.password" placeholder="Enter Password" />
   <div class="input-group-addon right">
-     <a href="#" (click)="this.togglePasswordVisibility()" class="fa fa-eye"></a>
+     <a href="#" (click)="this.togglePasswordVisibility()" title="Show Password" class="fa fa-eye"></a>
     </div>
 
 </div>
-    <button value="Log in" class="btn btn-success" >Log in </button><br/>
+    <button value="Log in" class="btn btn-success" (click)="this.logIn()" >Log in </button><br/>
      <a href="#">Forgot Password?</a>
   </div>
 </div>

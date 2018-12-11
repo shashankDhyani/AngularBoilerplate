@@ -17,3 +17,8 @@ input {
 {
      text-decoration: none !important;
 }
+
+a:title {
+    background-color: black;
+    color:whitesmoke;
+}

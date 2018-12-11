@@ -8,8 +8,11 @@ import { userModel } from '../../shared/Models/UserModel';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor() { 
+    this.User = new userModel();
+  }
   showPassword:boolean;
+  User:userModel;
 
   ngOnInit() {
   }
@@ -18,7 +21,7 @@ export class LoginComponent implements OnInit {
     this.showPassword = ! this.showPassword;
   }
 
-  logIn(user:userModel) {
-
+  logIn() {
+    console.log(this.User);
   }
 }
