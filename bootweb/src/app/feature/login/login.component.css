@@ -2,6 +2,11 @@ button{
     margin-top:10px;
 }
 
+a{
+    width:140px;
+    cursor: pointer;
+}
+
 input {
     margin-top: 8px;
 }
@@ -16,9 +21,4 @@ input {
 .fa-eye
 {
      text-decoration: none !important;
-}
-
-a:title {
-    background-color: black;
-    color:whitesmoke;
 }

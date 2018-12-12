@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { userModel } from '../../shared/Models/UserModel';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { userModel } from '../../shared/Models/UserModel';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { 
+  constructor(private router : Router) { 
     this.User = new userModel();
   }
   showPassword:boolean;
@@ -22,6 +23,12 @@ export class LoginComponent implements OnInit {
   }
 
   logIn() {
+    // call loginService from here...
     console.log(this.User);
   }
+
+  ForgotPassword(){
+   this.router.navigate(['/forgetpassword']);
+  }
+
 }

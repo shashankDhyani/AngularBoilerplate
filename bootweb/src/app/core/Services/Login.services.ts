@@ -13,7 +13,7 @@ class LoginService {
 
     Login(user: userModel){
        return this.http.post(this.BaseUrl,user).pipe(
-           map((response)=>(user = response.json()))
+        //    map((response)=>(user = response.json()))
        ).subscribe();
     }
 }
