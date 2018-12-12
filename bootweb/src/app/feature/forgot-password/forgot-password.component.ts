@@ -14,9 +14,6 @@ export class ForgotPasswordComponent implements OnInit {
 
   User: userModel;
 
-  
   ngOnInit() {
   }
-  
-
 }

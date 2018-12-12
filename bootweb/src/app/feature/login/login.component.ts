@@ -24,7 +24,9 @@ export class LoginComponent implements OnInit {
 
   logIn() {
     // call loginService from here...
-    console.log(this.User);
+
+    //then naviagate to dashboard
+    this.router.navigate(['/dashboard']);
   }
 
   ForgotPassword(){
